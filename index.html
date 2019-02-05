@@ -4,38 +4,54 @@
 	<head>
 		<title>Michelle Brown</title>
 		<meta charset="UTF-8">
-		<link rel="stylesheet" type="text/css" href="/css/main.css">
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+			$(function() {
+				$('bodyContent').load('home.html');
+				$('header').load('header.html');
+				$('footer').load('footer.html)');
+			});
 	</head>
 	
 	
 	<body>
 		
-		<header>
-			<img src="https://depts.washington.edu/iafl/300px-University_of_Washington_Seal.png" alt="University of Washington seal" id="seal">
-			<h1>Michelle Brown</h1>
-			<h2>University of Washington Tacoma Computer Science senior<br>& aspiring professional Software Developer</h2>
-			<nav>
-				<ul>
-					<li><a href="/">Home</a></li>
-					<li><a href="/projects">Projects</a></li>
-					<li><a href="/about">About</a></li>
-					<li><a href="/resume">Resume</a></li>
-				</ul>
-			</nav>
+		<header>	
 		</header>
 		
-		<div class="bodyContent">
-			<!-- /.add something -->
+		<div id='bodyContent'>
 		</div><!-- /.bodyContent -->
 		
+		<footer>
+		</footer>
+
 	</body>
-	
-	
-	<footer>
-		<ul>
-			<li><a href="https://github.com/MichelleChristine">github.com/MichelleChristine</a></li>
-			<li><a href="https://www.linkedin.com/in/michelle-c-brown/">linkedIn</a></li>
-		</ul>
-	</footer>
-	
+
+
+
+	<script>
+
+		$(document).ready(function() {
+
+			//for each of the navigation elements:
+
+			$('#home').click(function() {
+				$('#bodyContent').load('home.html');
+			})
+
+			$('#projects').click(function() {
+				$('#bodyContent').load('projects.html');
+			})
+
+			$('#about').click(function() {
+				$('#bodyContent').load('https://github.com/MichelleChristine/MichelleChristine.github.io/blob/master/about.html');
+			})
+
+			$('#resume').click(function() {
+				$('#bodyContent').load('resume.html');
+			})
+		});
+
+	</script>
+
 </html>
