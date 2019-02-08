@@ -78,3 +78,24 @@ body a:hover {
 footer a, a {
 	color: slategray;
 }
+
+#footerDiv {
+	float: left;
+}
+#topBtn {
+	display: none;
+	float: right;
+	border: none;
+	outline: none;
+	background-color: #d5d5d5;
+	color: white;
+	cursor: pointer;
+	padding: 5px;
+	margin: 5px;
+	border-radius: 5px;
+	font-size: 18px;
+  }
+  
+  #topBtn:hover {
+	background-color: slategray;
+  }
